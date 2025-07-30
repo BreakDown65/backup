@@ -5,3 +5,5 @@
 - Megírtam, hogy egy adott nevű külső HDD-t path hogyan kapok meg
 # Továbbiak
 - [ ] Kell készíteni egy listát, hogy melyik könytárakat kell átmásolni
+# LeneovoT530 gép
+- Inicializáltam a git-t és lehúztam a projektek a notebook-ra.
