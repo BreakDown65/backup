@@ -37,6 +37,21 @@ def find_usb_path_by_label(label):
 
     return None
 
+def newest_subdir(path):
+    """Egy könyvtárban meghatározza a legfrissebb alkönyvtár elérését
+    """
+    alkonyvtarak = [
+        os.path.join(path, d)
+        for d in os.listdir(path)
+        if os.path.isdir(os.path.join(path, d))
+    ]
+    
+    if not alkonyvtarak:
+        return None
+    
+    # Módosítási idő alapján rendezés
+    return max(alkonyvtarak, key=os.path.getmtime)
+
 def milyen_usb_drive():
     """
     Visszaadja, hogy milyen meghajtók vannak a géphez csatlakoztatva
@@ -52,3 +67,6 @@ drives = milyen_usb_drive()
 print("USB Path:", usb_path)
 print("Computer Name:", computer_name)
 print(drives)
+
+mappa = 'C:/Users/Somoskői Gábor/Backup/Calibre/Job-202410161007548'
+print("Legfrissebb alkönyvtár:", newest_subdir(mappa))
