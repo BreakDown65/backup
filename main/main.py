@@ -1,6 +1,5 @@
 import socket
 import os
-import platform
 
 computer_name = socket.gethostname()
 
