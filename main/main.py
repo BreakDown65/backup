@@ -3,9 +3,12 @@ import os
 import platform
 
 computer_name = socket.gethostname()
-print("Computer Name:", computer_name)
 
 def find_usb_path_by_label(label):
+    """
+    Különböző operációs rendszerek esetén megmondja,
+    hogy mi egy adott (label) meghajtó elérési útvonala
+    """
     system = platform.system()
 
     if system == "Windows":
@@ -34,7 +37,18 @@ def find_usb_path_by_label(label):
 
     return None
 
+def milyen_usb_drive():
+    """
+    Visszaadja, hogy milyen meghajtók vannak a géphez csatlakoztatva
+    """
+    import win32api
+    drives = win32api.GetLogicalDriveStrings().split('\000')[:-1]
+    return drives
+
 # Example usage
 usb_label = "MyPassport"
 usb_path = find_usb_path_by_label(usb_label)
+drives = milyen_usb_drive()
 print("USB Path:", usb_path)
+print("Computer Name:", computer_name)
+print(drives)
