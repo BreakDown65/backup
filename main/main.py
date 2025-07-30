@@ -40,5 +40,7 @@ print("USB Path:", usb_path)
 print("Computer Name:", computer_name)
 
 
-mappa = 'C:/Users/Somoskői Gábor/Backup/Calibre/Job-202410161007548'
+mappaCalibre = 'C:/Users/Somoskői Gábor/Backup/Calibre/Job-202410161007548'
+mappaObsidianDaily = 'C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianDaily/Job-202410151128605'
+mappaObsidianWeekly = 'C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianWeekly/Job-202410151144164'
 print("Legfrissebb alkönyvtár:", newest_subdir(mappa))
