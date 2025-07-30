@@ -52,18 +52,10 @@ def newest_subdir(path):
     # Módosítási idő alapján rendezés
     return max(alkonyvtarak, key=os.path.getmtime)
 
-def milyen_usb_drive():
-    """
-    Visszaadja, hogy milyen meghajtók vannak a géphez csatlakoztatva
-    """
-    import win32api
-    drives = win32api.GetLogicalDriveStrings().split('\000')[:-1]
-    return drives
 
 # Example usage
 usb_label = "MyPassport"
 usb_path = find_usb_path_by_label(usb_label)
-drives = milyen_usb_drive()
 print("USB Path:", usb_path)
 print("Computer Name:", computer_name)
 print(drives)
