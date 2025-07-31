@@ -1,5 +1,6 @@
 import socket
 import os
+from data.adat import SOURCE_SOMOSKOIGABOR
 
 computer_name = socket.gethostname()
 
