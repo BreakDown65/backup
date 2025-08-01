@@ -1,5 +1,6 @@
 import socket
 import os
+from adat import SOURCE_SOMOSKOIGABOR
 
 computer_name = socket.gethostname()
 
@@ -41,6 +42,6 @@ print("Computer Name:", computer_name)
 
 
 # mappaCalibre = 'C:/Users/Somoskői Gábor/Backup/Calibre/Job-202410161007548'
-# mappaObsidianDaily = 'C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianDaily/Job-202410151128605'
+mappaObsidianDaily = 'C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianDaily/Job-202410151128605'
 # mappaObsidianWeekly = 'C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianWeekly/Job-202410151144164'
-print("Legfrissebb alkönyvtár:", newest_subdir(mappaObsidianDaily))
+print("Legfrissebb alkönyvtár:", newest_subdir(SOURCE_SOMOSKOIGABOR["obsidianDaily"]))
