@@ -4,4 +4,9 @@ SOURCE_SOMOSKOIGABOR = {
     "obsidianDaily": "C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianDaily/Job-202410151128605",
     "obsidianWeekly": "C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianWeekly/Job-202410151144164"
 }
-    
+
+# Hely a MyPassport küldő meghajtón
+TARGET = {
+    "próbaBackup": usb_path + "BackUp\próbaBackupCél"
+}
+   
