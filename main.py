@@ -46,3 +46,4 @@ print("Computer Name:", computer_name)
 mappaObsidianDaily = 'C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianDaily/Job-202410151128605'
 # mappaObsidianWeekly = 'C:/Users/Somoskői Gábor/Backup/Obsidian/ObsidianWeekly/Job-202410151144164'
 print("Legfrissebb alkönyvtár:", newest_subdir(adat.SOURCE_SOMOSKOIGABOR["obsidianDaily"]))
+print(adat.TARGET)
