@@ -15,7 +15,7 @@ CONFIG = {
         (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianWeekly\Job-202410151144164", "Backup_Somoskoigabor/obsidianWeekly")
     ],
     "LenovoT530": [
-        (r"c:\Users\trans\Documents", "Backup_LenovoT530/próbaBackupLenovo")
+        (r"c:\Users\trans\Documents\próbaBackupLenovoT530", "Backup_LenovoT530/próbaBackupLenovo")
     ]
 }
 
