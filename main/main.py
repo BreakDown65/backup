@@ -14,7 +14,7 @@ CONFIG = {
         (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianDaily\Job-202410151128605", "Backup_Somoskoigabor/obsidianDaily"),
         (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianWeekly\Job-202410151144164", "Backup_Somoskoigabor/obsidianWeekly")
     ],
-    "PC2": [
+    "LenovoT530": [
         (r"D:\Work\Reports", "Backup_PC2/Reports"),
         (r"D:\Music", "Backup_PC2/Music"),
     ]
@@ -34,6 +34,7 @@ def find_external_drive(drive_name):
             except:
                 continue
     return None
+
 
 def get_latest_subfolder(path):
     """Visszaadja a legfrissebb almappa elérési útját"""
