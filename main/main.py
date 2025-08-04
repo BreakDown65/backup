@@ -4,7 +4,7 @@ import socket
 from datetime import datetime
 
 # Külső HDD neve
-HDD_NAME = "MyPassport"
+HDD_NAME = "WD100Gb"
 
 # Számítógép specifikus mappák
 # formátum: gépnév: [(forrás_mappa, cél_almappa), ...]
@@ -15,8 +15,7 @@ CONFIG = {
         (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianWeekly\Job-202410151144164", "Backup_Somoskoigabor/obsidianWeekly")
     ],
     "LenovoT530": [
-        (r"D:\Work\Reports", "Backup_PC2/Reports"),
-        (r"D:\Music", "Backup_PC2/Music"),
+        (r"c:\Users\trans\Documents", "Backup_LenovoT530/próbaBackupLenovo")
     ]
 }
 
