@@ -9,9 +9,10 @@ HDD_NAME = "MyPassport"
 # Számítógép specifikus mappák
 # formátum: gépnév: [(forrás_mappa, cél_almappa), ...]
 CONFIG = {
-    "PC1": [
-        (r"C:\Users\User\Documents\ProjectA", "Backup_PC1/ProjectA"),
-        (r"C:\Users\User\Desktop\Important", "Backup_PC1/Desktop"),
+    "Somoskoigabor": [
+        (r"C:\Users\Somoskői Gábor\Backup\Calibre\Job-202410161007548", "Backup_Somoskoigabor/calibre"),
+        (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianDaily\Job-202410151128605", "Backup_Somoskoigabor/obsidianDaily"),
+        (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianWeekly\Job-202410151144164", "Backup_Somoskoigabor/obsidianWeekly")
     ],
     "PC2": [
         (r"D:\Work\Reports", "Backup_PC2/Reports"),
