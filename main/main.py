@@ -2,9 +2,10 @@ import os
 import shutil
 import socket
 from datetime import datetime
+from string import ascii_uppercase
 
 # Külső HDD neve
-HDD_NAME = "WD100Gb"
+HDD_NAME = "MyPassport"
 
 # Számítógép specifikus mappák
 # formátum: gépnév: [(forrás_mappa, cél_almappa), ...]
@@ -15,13 +16,13 @@ CONFIG = {
         (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianWeekly\Job-202410151144164", "Backup_Somoskoigabor/obsidianWeekly")
     ],
     "LenovoT530": [
-        (r"c:\Users\trans\Documents\BestSellerBooks\Job-202412291518179", "Backup_LenovoT530/BestSellerBooks")
+        (r"D:\Work\Reports", "Backup_PC2/Reports"),
+        (r"D:\Music", "Backup_PC2/Music"),
     ]
 }
 
 def find_external_drive(drive_name):
     """Visszaadja a meghajtó betűjelét a meghajtó neve alapján"""
-    from string import ascii_uppercase
 
     for letter in ascii_uppercase:
         path = f"{letter}:\\"
@@ -33,7 +34,6 @@ def find_external_drive(drive_name):
             except:
                 continue
     return None
-
 
 def get_latest_subfolder(path):
     """Visszaadja a legfrissebb almappa elérési útját"""
