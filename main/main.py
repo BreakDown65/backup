@@ -13,7 +13,8 @@ CONFIG = {
     "Somoskoigabor": [
         (r"C:\Users\Somoskői Gábor\Backup\Calibre\Job-202410161007548", "Backup_Somoskoigabor/calibre"),
         (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianDaily\Job-202410151128605", "Backup_Somoskoigabor/obsidianDaily"),
-        (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianWeekly\Job-202410151144164", "Backup_Somoskoigabor/obsidianWeekly")
+        (r"C:\Users\Somoskői Gábor\Backup\Obsidian\ObsidianWeekly\Job-202410151144164", "Backup_Somoskoigabor/obsidianWeekly"),
+        (r"C:\Users\Somoskői Gábor\Backup\Abszolutórium\Job-202410211021006", "Backup_Somoskoigabor/Abszolutórium")
     ],
     "LenovoT530": [
         (r"D:\Work\Reports", "Backup_PC2/Reports"),
